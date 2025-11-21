@@ -1,222 +1,241 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safir Almamlkah</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>شـركة سفــير الخليج للمـقاولات</title>
 
+  <!-- خطوط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <img src="img/Logo1.png" alt="logo">
-            شـركة سفــير الخليج للمـقاولات
-        </div>
 
-        <span class="menu-btn" onclick="toggleSidebar()">☰</span>
+  <!-- Sidebar (اليسار) -->
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <button class="close-btn" aria-label="إغلاق القائمة" id="closeSidebar">×</button>
 
-        <nav>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">الخدمات</a></li>
-                <li><a href="#">الأعمال</a></li>
-                <li><a href="#">تواصل معنا</a></li>
-            </ul>
+    <nav class="sidebar-nav" aria-label="القائمة الرئيسية">
+      <ul>
+        <li><a href="#top">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#features">اعرف أكثر</a></li>
+        <li><a href="#order">طلب مشروع</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- overlay عند فتح الـ sidebar -->
+  <div id="overlay" class="overlay" tabindex="-1"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/Logo1.png" alt="logo" />
+        <span class="brand">شـركة سفــير الخليج للمـقاولات</span>
+      </div>
+
+      <div class="header-actions">
+        <nav class="desktop-nav" aria-label="قائمة التنقّل">
+          <ul>
+            <li><a href="#top">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#features">الأعمال</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
         </nav>
-    </header>
 
-    <header_main>
-        
-        <!--<img src="img/Logo1.png" alt="logo">-->
-    <h1> شـركة سفــير الخليج للمـقاولات</h1>
-</header_main>
-
-<!-- ABOUT US -->
-<section id="about">
-    <h2>مــن نحـن</h2>
-    <p>
-         شـركة سفــير الخليج للمـقاولات تقدم خدمات احترافية في مجالات الكهرباء، السباكة، 
-        تركيب كاميرات المراقبة، وأعمال الديكور. نلتزم بأعلى معايير الجودة والدقة 
-        في تنفيذ المشاريع من خلال فريق هندسي وفني متخصص.
-    </p>
-</section>
-
-<!-- SERVICES -->
-   <div class="fon">
-       <h2>خـدمـاتـنا</h2>
-          </div>
-<section id="services">
-    
-    
-    <div class="services">
-        <div class="card">
-            <img src="img/building.jpg" alt="مشروع 1">
-            <br>
-            <h2>مقاولات عامة</h2>
-        </div>
-
-        <div class="card">
-            <img src="img/electri.jpg" alt="مشروع 1">
-       <h2>أعمال وصيانة الكهرباء</h2>
-        </div>
-
-        <div class="card">
-            <img src="img/water_plumbing.jpg" alt="مشروع 1">
-          <h2>سباكة المياه</h2>
-         </div>
-
-         <div class="card">
-            <img src="img/Free_work.webp" alt="مشروع 1">
-          <h2> صيانة عامة</h2>
-         </div>
-
-         <div class="card">
-            <img src="img/Daykor.jpg" alt="مشروع 1">
-           <h2> هندسة وتصميم الديكور</h2> 
-           </div>
-
-       
-
+        <button class="menu-btn" id="openSidebar" aria-label="فتح القائمة">☰</button>
+      </div>
     </div>
-</section>
-<!-- ORDER FORM -->
-<section id="features" class="features">
-    
-    <div class="wrap">
-  <h1 class="title">تعـرف أكثر علـى خـدماتـنا</h1>
+  </header>
 
-  <div class="big-pill" role="region" aria-label="قائمة الخدمات">
-    <!-- الزر الأساسي -->
-    <div class="pill-button">الخدمة</div>
-</div>
-</div>
-
-    <div class="feature">
-        <img src="img/icon/design-building.svg" alt="design-building">
-      <h3>التصميم الهندسي</h3>
-      <p> تصميم معماري وإنشائي احترافي</p>
-    </div>
-    <div class="feature">
-        <img src="img/icon/building.svg" alt="building">
-      <h3>البناء والتشطيب</h3>
-      <p>تنفيذ أعمال البناء والتشطيبات النهائية بجودة فائقة</p>
-    </div>
-    <div class="feature">
-        <img src="img/icon/Tarmem.svg" alt="Tarmem">
-      <h3>الترميم </h3>
-      <p> أعمال ترميم شاملة للمباني القائمة</p>
-    </div>
-    <div class="feature">
-        <img src="img/icon/electricity.svg" alt="electricity">
-      <h3>أعمال كهربائية وسباكة</h3>
-      <p> جميع الأعمال المتعلقة بالكهرباء والسباكة</p>
-    </div>
-    <div class="feature">
-        <img src="img/icon/paint.svg" alt="paint">
-      <h3>أعمال الحدادة والدهان</h3>
-      <p>تصنيع وتركيب الهناجر والدهانات الداخلية والخارجية</p>
-    </div>
-    <div class="feature">
-        <img src="img/icon/roof.svg" alt="roof">
-      <h3> العزل</h3>
-      <p>حلول فعالة لعزل الأسطح والمنشأت</p>
+  <!-- HERO -->
+  <section class="hero" id="top" role="region" aria-label="الشعار الرئيسي">
+    <div class="hero-inner container">
+      <h1>شـركة سفــير الخليج للمـقاولات</h1>
+      <p class="hero-sub">خدمات احترافية في الكهرباء، السباكة، كاميرات المراقبة وأعمال الديكور</p>
     </div>
   </section>
 
-<!-- ORDER FORM -->
-<section id="order">
-    <h2>طلــب مـشروع</h2>
-    <form id="orderForm">
-        <label>اسم العميل</label>
-        <input type="text" id="name" required>
+  <!-- ABOUT -->
+  <section id="about" class="container section about">
+    <h2>مــن نحـن</h2>
+    <p>
+      شـركة سفــير الخليج للمـقاولات تقدم خدمات احترافية في مجالات الكهرباء، السباكة، تركيب كاميرات المراقبة، وأعمال الديكور. نلتزم بأعلى معايير الجودة والدقة في تنفيذ المشاريع من خلال فريق هندسي وفني متخصص.
+    </p>
+  </section>
 
-        <label>الخدمة المطلوبة</label>
-        <select id="service">
-            <option>مقاولات عامة</option>
-            <option>أعمال الكهرباء</option>
-            <option>سباكة المياه</option>
-            <option>صيانة عامة</option>
-            <option> هندسة وتصميم الديكور</option>
-            
-                 
+  <!-- SERVICES -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="fon">
+        <h2>خـدمـاتـنا</h2>
+      </div>
+
+      <div class="services-grid" aria-label="خدماتنا">
+        <div class="card">
+          <img src="img/building.jpg" alt="مقاولات عامة" />
+          <h3>مقاولات عامة</h3>
+        </div>
+        <div class="card">
+          <img src="img/electri.jpg" alt="أعمال كهربائية" />
+          <h3>أعمال وصيانة الكهرباء</h3>
+        </div>
+        <div class="card">
+          <img src="img/water_plumbing.jpg" alt="سباكة" />
+          <h3>سباكة المياه</h3>
+        </div>
+        <div class="card">
+          <img src="img/Free_work.webp" alt="صيانة عامة" />
+          <h3>صيانة عامة</h3>
+        </div>
+        <div class="card">
+          <img src="img/Daykor.jpg" alt="ديكور" />
+          <h3>هندسة وتصميم الديكور</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / اعرف أكثر -->
+  <section id="features" class="features section">
+    <div class="container">
+      <div class="features-top">
+        <h2 class="title">تعـرف أكثر علـى خـدماتـنا</h2>
+
+        <div class="big-pill" role="region" aria-label="قائمة الخدمات">
+          <div class="pill-button">الخدمة</div>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature">
+          <img src="img/icon/design-building.svg" alt="" />
+          <h3>التصميم الهندسي</h3>
+          <p>تصميم معماري وإنشائي احترافي</p>
+        </article>
+        <article class="feature">
+          <img src="img/icon/building.svg" alt="" />
+          <h3>البناء والتشطيب</h3>
+          <p>تنفيذ أعمال البناء والتشطيبات النهائية بجودة فائقة</p>
+        </article>
+        <article class="feature">
+          <img src="img/icon/Tarmem.svg" alt="" />
+          <h3>الترميم</h3>
+          <p>أعمال ترميم شاملة للمباني القائمة</p>
+        </article>
+        <article class="feature">
+          <img src="img/icon/electricity.svg" alt="" />
+          <h3>أعمال كهربائية وسباكة</h3>
+          <p>جميع الأعمال المتعلقة بالكهرباء والسباكة</p>
+        </article>
+        <article class="feature">
+          <img src="img/icon/paint.svg" alt="" />
+          <h3>أعمال الحدادة والدهان</h3>
+          <p>تصنيع وتركيب الهناجر والدهانات الداخلية والخارجية</p>
+        </article>
+        <article class="feature">
+          <img src="img/icon/roof.svg" alt="" />
+          <h3>العزل</h3>
+          <p>حلول فعالة لعزل الأسطح والمنشأت</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section id="order" class="section form-section">
+    <div class="container">
+      <h2>طلــب مـشروع</h2>
+      <form id="orderForm" class="order-form" novalidate>
+        <label for="name">اسم العميل</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="service">الخدمة المطلوبة</label>
+        <select id="service" name="service">
+          <option>مقاولات عامة</option>
+          <option>أعمال الكهرباء</option>
+          <option>سباكة المياه</option>
+          <option>صيانة عامة</option>
+          <option>هندسة وتصميم الديكور</option>
         </select>
 
-        <label>البريد الإلكتروني</label>
-        <input type="email" id="email" required>
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required />
 
-        <button type="submit">إرسال الطلب</button>
-    </form>
-</section>
-
-
-<!--قسم معلومات عن الصفحة ومعلومات التواصل-->
-<section id="contact">
-    <div class="logo2">
-        <img src="img/Logo1.png" alt="logo">
-         شـركة سفــير الخليج للمـقاولات
+        <button type="submit" class="submit-btn">إرسال الطلب</button>
+      </form>
     </div>
-    <p>مؤسسة مقاولات متخصصة في مجال البناء، ومجال الكهرباء والسباكة، حيث تمتلك المؤسسة اضل الكوادر
-        والمعدات والادوات الحديثة لضمان تنفيذ الاعمال بجودة واحترافية عالية 
-        في كافة اعمالنا وخدماتنا.
-    </p>
-    <h2>للتواصل بنا</h2>
+  </section>
 
-    <ul class="contact-list">
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+      <div class="logo2">
+        <img src="img/Logo1.png" alt="logo" />
+        <div>
+          شـركة سفــير الخليج للمـقاولات
+        </div>
+      </div>
+
+      <p class="contact-desc">
+        مؤسسة مقاولات متخصصة في مجال البناء، ومجال الكهرباء والسباكة، حيث تمتلك المؤسسة أضـل الكوادر والمعدات والأدوات الحديثة لضمان تنفيذ الأعمال بجودة واحترافية عالية.
+      </p>
+
+      <h2>للتواصل بنا</h2>
+      <ul class="contact-list">
         <li>
-            <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone">
-            <span>0537371500</span>
+       <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="هاتف" />
+       <span>0537371500</span>
+       </li>
+       
+        <li>
+      <img src="img/icon/email.svg" alt="بريد" />
+      <span>info@safir-m.com</span>
+      </li>
+      
+        <li>
+          <a href="https://api.whatsapp.com/send?phone=9660537376660&text=مرحبا" aria-label="واتساب">
+            <img src="img/icon/whatsapp.svg" alt="واتساب" />
+          </a>
         </li>
+      </ul>
 
+      <h3>تابعنا على</h3>
+      <ul class="contact-social-list">
         <li>
-            <img src="img/icon/email.svg" alt="email">
-            <span>info@safir-m.com</span>
+        <a href="#" aria-label="فيسبوك">
+     <img src="img/icon/facebook.svg"  alt="facebook" />
+     </a> 
+     </li>
+     
+        <li>
+        <a href="#" aria-label="انستجرام">
+    <img src="img/icon/instagram.svg" alt="instagram" />
+    </a>
+    </li>
+    
+        <li>
+          <a href="#" aria-label="تويتر">
+        <img src="img/icon/x.svg" alt="x" />
+        </a>
         </li>
-        <li>
-            <a href="https://api.whatsapp.com/send?phone=9660537376660&text=مرحبا">
-                <img src="img/icon/whatsapp.svg" alt="whatsapp">
-                
-            </a>
-            <li>
-    </ul>
+      </ul>
+    </div>
+  </section>
 
-    <h3>تابعنا على</h3>
-    <ul class="contact-social-list">
-
-        <li>
-            <a href="#">
-                <img src="img/icon/facebook.svg" alt="facebook">
-                
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                <img src="img/icon/instagram.svg" alt="instagram">
-                
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                <img src="img/icon/x.svg" alt="twitter X">
-                 
-            </a>
-        </li>
-
-        
-    </ul>
-</section>
-<footer class="footer">
-    <p>© 2025   شـركة سفــير الخليج للمـقاولات </p>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 شـركة سفــير الخليج للمـقاولات</p>
+    </div>
   </footer>
-    <!-- Sidebar Script -->
-    <script>
-        function toggleSidebar() {
-            document.getElementById("sidebar").classList.toggle("show");
-        }
-    </script>
 
+  <script src="script.js"></script>
 </body>
 </html>
