@@ -116,7 +116,9 @@ header_main {
 /* العناوين داخل الشعار */
 header_main h1 {
     font-size: 26px;
-    margin-bottom: 250px;
+    margin-bottom: -280px;
+    color: #1e4b7a;
+    
 }
 
 header_main .logo h2 {
@@ -288,10 +290,14 @@ header_main .logo h2 {
   /* لمسات responsiveness */
  @media (max-width:720px){
     h1.title{ font-size:40px; margin-bottom:22px; }
+    .big-pill{justify-content:center;
+    left: -65px;
+    width:180px;
+    height:30px;}
     .pill-button{ height:76px; font-size:24px; width:80%; }
     .big-pill{ padding:28px 18px; }
     .sub-text{ font-size:22px; margin-top:16px; }
-  }
+  } 
   
 .feature h3{
     color: #1e4b7a;
