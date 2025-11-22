@@ -59,7 +59,7 @@
   <section class="hero" id="top" role="region" aria-label="الشعار الرئيسي">
     <div class="hero-inner container">
       <h1>شـركة سفــير الخليج للمـقاولات</h1>
-      <p class="hero-sub">خدمات احترافية في المقاولات العامة، الكهرباء، السباكة، والصيانة العامة.</p>
+      <p class="hero-sub">خدمات احترافية في الكهرباء، السباكة، كاميرات المراقبة وأعمال الديكور</p>
     </div>
   </section>
 
@@ -67,7 +67,7 @@
   <section id="about" class="container section about">
     <h2>مــن نحـن</h2>
     <p>
-      شـركة سفــير الخليج للمـقاولات تقدم خدمات احترافية في مجالات التصميم الهندسي والمقاولات، تنفيذ أعمال البناء والتشطيبات، الكهرباء، السباكة، أعمال الحدادة والدهان، وعزل الأسطح والمنشأت. نلتزم بأعلى معايير الجودة والدقة في تنفيذ المشاريع من خلال فريق هندسي وفني متخصص.
+      شـركة سفــير الخليج للمـقاولات تقدم خدمات احترافية في مجالات الكهرباء، السباكة، تركيب كاميرات المراقبة، وأعمال الديكور. نلتزم بأعلى معايير الجودة والدقة في تنفيذ المشاريع من خلال فريق هندسي وفني متخصص.
     </p>
   </section>
 
@@ -149,30 +149,40 @@
     </div>
   </section>
 
-  <!-- ORDER FORM -->
+ <!-- ORDER FORM -->
   <section id="order" class="section form-section">
-    <div class="container">
-      <h2>طلــب مـشروع</h2>
-      <form id="orderForm" class="order-form" novalidate>
-        <label for="name">اسم العميل</label>
-        <input type="text" id="name" name="name" required />
+  <div class="container">
+    <h2>طلــب مـشروع</h2>
 
-        <label for="service">الخدمة المطلوبة</label>
-        <select id="service" name="service">
-          <option>مقاولات عامة</option>
-          <option>أعمال الكهرباء</option>
-          <option>سباكة المياه</option>
-          <option>صيانة عامة</option>
-          <option>هندسة وتصميم الديكور</option>
-        </select>
+    <form id="orderForm" class="order-form" novalidate>
+      <label for="name">اسم العميل</label>
+      <input type="text" id="customer_name" name="name" required />
 
-        <label for="email">البريد الإلكتروني</label>
-        <input type="email" id="email" name="email" required />
+      <label for="service">الخدمة المطلوبة</label>
+      <select id="customer_service" name="service">
+        <option>مقاولات عامة</option>
+        <option>أعمال الكهرباء</option>
+        <option>سباكة المياه</option>
+        <option>صيانة عامة</option>
+        <option>هندسة وتصميم الديكور</option>
+      </select>
 
-        <button type="submit" class="submit-btn">إرسال الطلب</button>
-      </form>
-    </div>
-  </section>
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="customer_email" name="email" required />
+
+      <button type="submit" class="submit-btn">إرسال الطلب</button>
+    <!-- Loader أثناء الإرسال -->
+      <div class="loader" id="loader"></div>
+    </form>
+  </div>
+</section>
+
+<!-- Popup رسالة نجاح -->
+<div class="popup popup-success" id="successPopup">
+  <h3>🎉 تم الإرسال بنجاح!</h3>
+  <p>شكراً لك، تم استلام طلبك وسيتم التواصل معك قريباً.</p>
+</div>
+  
 
   <!-- CONTACT -->
   <section id="contact" class="section contact-section">
@@ -236,6 +246,19 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!--<script src="script.js"></script>-->
+  <script src="index.js"></script>
+ <!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  // تهيئة EmailJS
+  (function () {
+    emailjs.init("G9WCgfS45B7MpIw1P");
+  })();
+
+  
+</script>
+  
 </body>
 </html>
