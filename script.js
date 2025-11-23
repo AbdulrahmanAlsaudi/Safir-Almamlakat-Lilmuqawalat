@@ -28,13 +28,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeSidebar();
 });
 
-// Simple form submit handler (يمكنك تغييره لطلب فعلي)
-const orderForm = document.getElementById('orderForm');
-orderForm && orderForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  // هنا يمكن إضافة إرسال بيانات عبر AJAX أو أي عملية أخرى
-  alert('تم إرسال طلبك — سنتواصل معك قريباً!');
-  orderForm.reset();
+
   // لو كانت الصفحة صغيرة، أغلق الـ sidebar لو فتح
   closeSidebar();
-});
+
