@@ -51,7 +51,7 @@ body {
   gap: 12px;
 }
 .header-inner .logo img {
- width: 50px;
+ width: 49px;
  height: auto;
   display:block;
   animation: rotateIn 1.3s ease;
