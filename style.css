@@ -50,7 +50,7 @@ body {
   align-items: center;
   gap: 12px;
 }
-.logo img {
+.header-inner.logo img {
    width: 50px;
    height: auto;
    display:block;
