@@ -177,12 +177,21 @@
   </div>
 </section>
 
-<!-- Popup رسالة نجاح -->
-<div class="popup popup-success" id="successPopup">
-  <h3>🎉 تم الإرسال بنجاح!</h3>
-  <p>شكراً لك، تم استلام طلبك وسيتم التواصل معك قريباً.</p>
+<!-- Success Popup -->
+<div class="popup" id="successPopup">
+  <div class="icon">
+    <!-- SVG icon -->
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M7 12l3 3 7-7"></path>
+    </svg>
+  </div>
+
+  <h3>تم الإرسال بنجاح!</h3>
+  <p>شكراً لك، تم استلام طلبك بنجاح وسنتواصل معك قريباً.</p>
+
+  <button class="close-btn" onclick="closePopup()">إغلاق</button>
 </div>
-  
 
   <!-- CONTACT -->
   <section id="contact" class="section contact-section">
