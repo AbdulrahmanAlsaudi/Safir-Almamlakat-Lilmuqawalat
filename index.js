@@ -23,7 +23,7 @@ const form = document.getElementById("orderForm");
           loader.style.display = "none";
 
           // إظهار Popup نجاح
-          popup.style.display = "block";
+          showPopup();
 
           // إغلاق تلقائي بعد 3 ثواني
           setTimeout(() => {
@@ -41,4 +41,14 @@ const form = document.getElementById("orderForm");
           submitBtn.disabled = false;
           alert("حدث خطأ أثناء الإرسال.");
       });
+      function showPopup() {
+  document.getElementById("successPopup").style.display = "block";
+
+  // إغلاق تلقائي بعد 3 ثواني
+  setTimeout(closePopup, 3000);
+}
+
+function closePopup() {
+  document.getElementById("successPopup").style.display = "none";
+}
   });

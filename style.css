@@ -55,12 +55,12 @@ body {
  height: auto;
   display:block;
   animation: rotateIn 1.3s ease;
-}
-.brand {
-   font-weight: 700;
-   font-size: 18px;
-   color: #0d355f;
-}
+   }
+.brand { 
+font-weight: 700;
+ font-size: 18px;
+  color: #0d355f; }
+
 
 /* القوائم العلوية للحواسيب */
 .desktop-nav ul {
@@ -409,7 +409,7 @@ width:28px;
     }
 
     /* Popup */
-    .popup {
+    /*.popup {
       display: none;
       position: fixed;
       top: 50%;
@@ -435,7 +435,80 @@ width:28px;
 
     .popup h3 {
       margin-bottom: 10px;
-    }
+    }*/
+    
+    /* Popup Success */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  width: 330px;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+  animation: popupFade 0.35s ease-out;
+  border-top: 6px solid #1e4b7a; /* اللون الأساسي */
+}
+
+/* حركة دخول popup */
+@keyframes popupFade {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* أيقونة النجاح */
+.popup .icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #1e4b7a15; /* اللون الأساسي بتعتيم */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* check-circle */
+.popup .icon svg {
+  width: 42px;
+  height: 42px;
+  stroke: #1e4b7a; /* اللون الأساسي */
+  stroke-width: 3;
+  fill: none;
+}
+
+.popup h3 {
+  color: #1e4b7a; /* اللون الأساسي */
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.popup p {
+  color: #333;
+  font-size: 15px;
+}
+
+/* زر إغلاق */
+.popup .close-btn {
+  margin-top: 14px;
+  background: #b8262d; /* اللون الثانوي */
+  padding: 8px 18px;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.popup .close-btn:hover {
+  background: #952025; /* درجة أغمق للثانوي */
+}
 /* ===========================
    RESPONSIVE BREAKPOINTS
    =========================== */
