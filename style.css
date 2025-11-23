@@ -50,8 +50,17 @@ body {
   align-items: center;
   gap: 12px;
 }
-.logo img { width: 46px; height: auto; display:block; }
-.brand { font-weight: 700; font-size: 18px; color: #0d355f; }
+.logo img {
+   width: 50px;
+   height: auto;
+   display:block;
+   animation: rotateIn 1.3s ease;
+}
+.brand {
+   font-weight: 700;
+   font-size: 18px;
+   color: #0d355f;
+}
 
 /* القوائم العلوية للحواسيب */
 .desktop-nav ul {
