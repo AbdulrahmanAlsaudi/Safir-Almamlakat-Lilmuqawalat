@@ -1,6 +1,3 @@
-/* ===========================
-   RESET + BASE
-   =========================== */
 *,
 *::before,
 *::after {
@@ -44,7 +41,7 @@ body {
   padding: 14px 0;
 }
 
-/* الشعار */
+                              /* الشعار */
 .logo {
   display: flex;
   align-items: center;
@@ -62,7 +59,7 @@ font-weight: 700;
   color: #0d355f; }
 
 
-/* القوائم العلوية للحواسيب */
+                   /* القوائم العلوية للحواسيب */
 .desktop-nav ul {
   display: flex;
   gap: 18px;
@@ -95,7 +92,7 @@ font-weight: 700;
 }
 
 /* ===========================
-   SIDEBAR (LEFT) & OVERLAY
+                          القائمة الجانبية
    =========================== */
 .sidebar {
   position: fixed;
@@ -126,7 +123,7 @@ font-weight: 700;
   color: #444;
 }
 
-/* روابط الـ sidebar */
+                    /* روابط الـ sidebar */
 .sidebar-nav ul { list-style: none; padding: 0; margin-top: 8px; }
 .sidebar-nav li { margin: 8px 0; }
 .sidebar-nav a {
@@ -217,16 +214,13 @@ padding-bottom: 10px;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   overflow: hidden;
-  
-  
 }
 .services-grid .card img {
  width: 100%;
   height: 160px;
    object-fit: cover;
     display:block;
-            
-     }
+   }
 .card h3 {
  padding: 12px;
   font-size: 16px;
@@ -246,15 +240,11 @@ padding-bottom: 10px;
   font-weight: 800;
    color: #1e4b7a;
     margin: 0;
-    
-    
      }
 .features-top .title{
-    
     font-size: 22px;
     text-align: center;
     align-items: center;
-    
   }
 .big-pill {
   background: linear-gradient(180deg,#9eaebf,#9eaebf);
@@ -293,43 +283,162 @@ padding-bottom: 10px;
 .feature h3 { font-size: 18px; color: #1e4b7a; margin: 8px 0; }
 .feature p { font-weight: 600; color: #333; }
 
-/* FORM */
+
+/* ===========================
+              FORM
+   =========================== */
 .form-section h2{
     color: #0d355f;
-    
     text-align: center;
 }
 .form-section .order-form {
-  max-width: 680px;
   margin-inline: auto;
   background: #fff;
-  padding: 18px;
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
 }
-.order-form label { display:block; margin-top: 8px; font-weight: 600; }
-.order-form input,
-.order-form select,
-.order-form textarea {
-  width: 100%;
-  padding: 10px 12px;
+.order-form label {
+  display:block;
   margin-top: 8px;
-  border-radius: 8px;
-  border: 1px solid #d1d7df;
+  font-weight: 600;
+  color: #1e4b7a;
+   }
+   
+.order-form input,
+.order-form select{
+  width: 100%;
+  padding: 12px;
+  margin-top: 4px;
+  border-radius: 10px;
+  border: 2px solid #d9e2ec;
   font-size: 15px;
+  transition: 0.3s;
+}
+.order-form input:focus,
+.order-form select:focus {
+  border-color: #1e4b7a;
+  box-shadow: 0 0 5px rgba(30, 75, 122, 0.3);
+  outline: none;
 }
 .submit-btn {
-  margin-top: 8px;
+  /*margin-top: 8px;
   background: #1e4b7a;
   color: #fff;
   border: none;
   padding: 10px 14px;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 700; 0.3s;*/
+  
+  background: #1e4b7a;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.3s;
+  margin-top: 8px;
+  font-weight: 500; 0.3s;
+}
+.submit-btn:hover {
+  background: #163a5d;
 }
 
-/* CONTACT */
+/* Loader */
+    .loader {
+      display: none;
+      margin: 10px auto;
+      border: 4px solid #ddd;
+      border-top: 4px solid #2e87ff;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Popup Success */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  width: 330px;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+  animation: popupFade 0.35s ease-out;
+  border-top: 6px solid #1e4b7a; /* اللون الأساسي */
+}
+
+                            /* حركة دخول popup */
+@keyframes popupFade {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+                                   /* أيقونة النجاح */
+.popup .icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #1e4b7a15; /* اللون الأساسي بتعتيم */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* check-circle */
+.popup .icon svg {
+  width: 42px;
+  height: 42px;
+  stroke: #1e4b7a; /* اللون الأساسي */
+  stroke-width: 3;
+  fill: none;
+}
+.popup h3 {
+  color: #1e4b7a; /* اللون الأساسي */
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+.popup p {
+  color: #333;
+  font-size: 15px;
+}
+                                 /* زر إغلاق */
+.popup .close-btn {
+  margin-top: 14px;
+  background: #b8262d; /* اللون الثانوي */
+  padding: 8px 18px;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.popup .close-btn:hover {
+  background: #952025; /* درجة أغمق للثانوي */
+}
+
+
+/* ===========================
+   CONTACT
+   =========================== */
 .contact-inner {
 max-width: 880px;
 margin-inline: auto;
@@ -357,8 +466,6 @@ display:flex;
 gap:18px;
 justify-content:center;
 flex-wrap:wrap;
-
- 
 }
 .contact-list li {
 display:flex;
@@ -370,12 +477,8 @@ align-items:center;
 width:28px; 
 }
 .contact-social-list { 
- display:flex; 
- 
- 
- margin-top: 8px;
- 
- 
+    display:flex;  
+    margin-top: 8px;
     flex-direction: row; /* جعل الاتجاه أفقي */
     gap: 15px; /* مسافة بين الأيقونات */
     justify-content: center; /* توسيطها (اختياري) */
@@ -383,8 +486,11 @@ width:28px;
 .contact-social-list img {
  width:32px;
   }
-
-/* FOOTER */
+  
+  
+/* ===========================
+   FOOTER
+   =========================== */
 .footer {
  background:#1e4b7a;
   color:#fff;
@@ -392,123 +498,7 @@ width:28px;
     margin-top: 20px;
   border-top: 3px solid #0d355f;     text-align:center;
       }
-/* Loader */
-    .loader {
-      display: none;
-      margin: 10px auto;
-      border: 4px solid #ddd;
-      border-top: 4px solid #2e87ff;
-      border-radius: 50%;
-      width: 35px;
-      height: 35px;
-      animation: spin 0.8s linear infinite;
-    }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    /* Popup */
-    /*.popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 25px 35px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      text-align: center;
-      z-index: 9999;
-      animation: fadeIn 0.3s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translate(-50%, -40%); }
-      to { opacity: 1; transform: translate(-50%, -50%); }
-    }
-
-    .popup-success {
-      border-right: 6px solid #1e4b7a;
-    }
-
-    .popup h3 {
-      margin-bottom: 10px;
-    }*/
-    
-    /* Popup Success */
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  padding: 30px 40px;
-  border-radius: 16px;
-  width: 330px;
-  text-align: center;
-  z-index: 9999;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.25);
-  animation: popupFade 0.35s ease-out;
-  border-top: 6px solid #1e4b7a; /* اللون الأساسي */
-}
-
-/* حركة دخول popup */
-@keyframes popupFade {
-  from { opacity: 0; transform: translate(-50%, -60%); }
-  to   { opacity: 1; transform: translate(-50%, -50%); }
-}
-
-/* أيقونة النجاح */
-.popup .icon {
-  width: 75px;
-  height: 75px;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-  background: #1e4b7a15; /* اللون الأساسي بتعتيم */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* check-circle */
-.popup .icon svg {
-  width: 42px;
-  height: 42px;
-  stroke: #1e4b7a; /* اللون الأساسي */
-  stroke-width: 3;
-  fill: none;
-}
-
-.popup h3 {
-  color: #1e4b7a; /* اللون الأساسي */
-  margin-bottom: 8px;
-  font-size: 22px;
-}
-
-.popup p {
-  color: #333;
-  font-size: 15px;
-}
-
-/* زر إغلاق */
-.popup .close-btn {
-  margin-top: 14px;
-  background: #b8262d; /* اللون الثانوي */
-  padding: 8px 18px;
-  border: none;
-  color: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.popup .close-btn:hover {
-  background: #952025; /* درجة أغمق للثانوي */
-}
 /* ===========================
    RESPONSIVE BREAKPOINTS
    =========================== */
