@@ -575,14 +575,7 @@ width:28px;
 
   .features .features-top {gap: 25px;padding: 0 10px; flex-direction: column; align-items: center;}
 
-  .title { font-size: 24px; }
-  .pill-button { padding: 12px 26px; font-size: 19px; }
-  .big-pill { padding: 10px 20px; min-width: 150px; }
-  .features-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
 
-  .feature { padding: 22px; }
-    .feature img { width: 50px; }
-  .feature h3 { font-size: 20px; }
 }
 
 
