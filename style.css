@@ -526,7 +526,7 @@ width:28px;
   .hero { padding: 44px 0; }
   .hero h1 { font-size: 22px; }
   .features .features-top { flex-direction: column; align-items: center; gap: 12px; }
-  .big-pill { min-width: 120px; }
+  .big-pill { min-width: 130px; }
   .card img { height: 140px; }
   .sidebar { width: 80%; }
 }
@@ -536,7 +536,7 @@ width:28px;
   .brand { font-size: 15px; }
   .logo img { width: 40px; }
   .card img { height: 120px; }
-  .pill-button { font-size: 16px; padding: 8px 14px; }
+  .pill-button { font-size: 16px; padding: 8px 14px; width: 80px;}
   .features-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .order-form { padding: 14px; }
