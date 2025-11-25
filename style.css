@@ -56,7 +56,8 @@ body {
 .brand { 
 font-weight: 700;
  font-size: 18px;
-  color: #0d355f; }
+  color: #0d355f; 
+  }
 
 
                    /* القوائم العلوية للحواسيب */
@@ -184,7 +185,9 @@ font-weight: 700;
     }
 .about p {
  color: #b8262d;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 16px;
+   font-family: "Times New Roman", Times, serif;
    }
 
 /* SERVICES GRID */
@@ -450,10 +453,12 @@ align-items:center;
 gap:12px;
 justify-content:center;
 margin-bottom:10px;
-font-weight: 600;
+font-weight: 700;
+ font-size: 16px;
+  color: #0d355f; 
 }
 .logo2 img {
-width:46px;
+width:49px;
 }
 .contact-desc {
 font-weight: 600;
@@ -475,6 +480,12 @@ align-items:center;
  }
 .contact-list img { 
 width:28px; 
+}
+.contact-list span{
+    color:#1e4b7a;
+}
+.contact-list span{
+    color:#1e4b7a;
 }
 .contact-social-list { 
     display:flex;  
