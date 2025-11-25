@@ -542,7 +542,7 @@ width:28px;
   .order-form { padding: 14px; }
   .contact-list { flex-direction: column; gap: 10px; }
 
-
+}
 /* ============================
       تحسينات للّابتوب features
    ============================ */
@@ -556,7 +556,7 @@ width:28px;
   .big-pill { padding: 10px 20px; min-width: 150px; }
   .features-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
 
-  /*.feature { padding: 22px; }
+  .feature { padding: 22px; }
     .feature img { width: 50px; }
-  .feature h3 { font-size: 20px; }*/
+  .feature h3 { font-size: 20px; }
 }
