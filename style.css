@@ -525,8 +525,8 @@ width:28px;
 @media (max-width: 720px) {
   .hero { padding: 44px 0; }
   .hero h1 { font-size: 22px; }
-  .features .features-top { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .big-pill { min-width: 160px; }
+  .features .features-top { flex-direction: column; align-items: center; gap: 12px; }
+  .big-pill { min-width: 120px; }
   .card img { height: 140px; }
   .sidebar { width: 80%; }
 }
@@ -541,4 +541,22 @@ width:28px;
   .services-grid { grid-template-columns: 1fr; }
   .order-form { padding: 14px; }
   .contact-list { flex-direction: column; gap: 10px; }
+
+
+/* ============================
+      تحسينات للّابتوب features
+   ============================ */
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+  .features .features-top {gap: 25px;padding: 0 10px;
+    flex-direction: column; align-items: center;}
+
+  .title { font-size: 24px; }
+  .pill-button { padding: 12px 26px; font-size: 19px; }
+  .big-pill { padding: 10px 20px; min-width: 150px; }
+  .features-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+
+  /*.feature { padding: 22px; }
+    .feature img { width: 50px; }
+  .feature h3 { font-size: 20px; }*/
 }
