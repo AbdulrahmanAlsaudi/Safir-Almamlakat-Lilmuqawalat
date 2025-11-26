@@ -193,45 +193,52 @@ font-weight: 700;
    font-family: "Times New Roman", Times, serif;
    }
 
-/* SERVICES GRID */
+/* القسم الرئيسي */
 .services-section {
-background: #9eaebf;
-padding-bottom: 10px;
+  background: #9eaebf;
+  padding-bottom: 20px;
 }
-.fon h2 {
- text-align: center;
-  color: #0d355f;
-   margin-bottom: 8px;
-    }
 
+/* العنوان */
+.fon h2 {
+  text-align: center;
+  color: #0d355f;
+  margin-bottom: 12px;
+}
+
+/* شبكة الخدمات */
 .services-grid {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-top: 18px;
-  max-width: 300px;
-  margin: auto;
- /* padding: 50px 0;*/
+  margin: 20px auto 0;
+  max-width: 95%;
 }
+
+/* بطاقة الخدمة */
 .card {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   padding-bottom: 12px;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   overflow: hidden;
+  transition: 0.3s;
 }
+
 .services-grid .card img {
- width: 100%;
-  height: 160px;
-   object-fit: cover;
-    display:block;
-   }
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
 .card h3 {
- padding: 12px;
-  font-size: 16px;
-   color: #0d355f;
-    }
+  padding: 14px;
+  font-size: 17px;
+  color: #0d355f;
+  font-weight: 700;
+}
 
 /* FEATURES (اعرف أكثر) */
 .features .features-top {
