@@ -579,7 +579,7 @@ width:28px;
       تحسينات للّابتوب features
    ============================ */
 @media (min-width: 1024px) {
-  .features-top {
+  .features .features-top {
     justify-content: center;   /* وضع العناصر في منتصف الصفحة */
     gap: 30px;
   }
