@@ -523,7 +523,9 @@ width:28px;
 }
 .contact-social-list { 
     display:flex;  
-    margin-top: 8px;
+    list-style: none;   /* إزالة النقاط */
+    padding: 0;         /* إزالة المسافات الجانبية */
+    margin: 0 auto;     /* توسيط القائمة */
     flex-direction: row; /* جعل الاتجاه أفقي */
     gap: 15px; /* مسافة بين الأيقونات */
     justify-content: center; /* توسيطها (اختياري) */
