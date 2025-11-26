@@ -578,11 +578,12 @@ width:28px;
 /* ============================
       تحسينات للّابتوب features
    ============================ */
-@media (min-width: 1024px) and (max-width: 1366px) {
-
-  .features .features-top {gap: 25px;padding: 0 10px; flex-direction: column; align-items: center;}
+@media (min-width: 1024px) {
+  .features-top {
+    justify-content: center;   /* وضع العناصر في منتصف الصفحة */
+    gap: 30px;
+  }
 }
-
 
 /* -------------------------------------------------
       استجابة (Responsive form-section) لكل الشاشات
