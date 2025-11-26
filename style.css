@@ -212,7 +212,7 @@ font-weight: 700;
   gap: 18px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 20px auto 0;
-  max-width: 95%;
+  max-width: 85%;
 }
 
 /* بطاقة الخدمة */
