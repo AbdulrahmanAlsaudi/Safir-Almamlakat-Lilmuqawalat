@@ -176,6 +176,7 @@
 
  <label for="customer_service">الخدمة المطلوبة</label>
 <select id="customer_service" name="service" class="styled-select">
+   <option value="">اختر نوع الخدمة</option>
   <option>مقاولات عامة</option>
   <option>أعمال الكهرباء</option>
   <option>سباكة المياه</option>
@@ -288,10 +289,13 @@
 </script>
  <!-- كود خاص باختيار الخدمات CDN -->
 <script>
-  $(document).ready(function() {
-    $("#customer_service").select2();
-  });
-</script>
-  
+    $(document).ready(function() {
+      $("#customer_service").select2({
+        placeholder: "اختر نوع الخدمة",
+        allowClear: true
+      });
+    });
+  </script>
+
 </body>
 </html>
