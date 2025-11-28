@@ -9,6 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -110,7 +120,7 @@
         <h2 class="title">تعـرف أكثر علـى خـدماتـنا</h2>
 
         <div class="big-pill" role="region" aria-label="قائمة الخدمات">
-          <div class="pill-button">الخدمة</div>
+          <div class="pill-button">الخـدمـة</div>
         </div>
       </div>
 
@@ -164,14 +174,14 @@
    <label for="customer_address">عنوان العميل</label>
    <input type="text" id="customer_address" name="address" required />
 
-  <label for="customer_service">الخدمة المطلوبة</label>
-      <select id="customer_service" name="service">
-        <option>مقاولات عامة</option>
-        <option>أعمال الكهرباء</option>
-        <option>سباكة المياه</option>
-        <option>صيانة عامة</option>
-        <option>هندسة وتصميم الديكور</option>
-      </select>
+ <label for="customer_service">الخدمة المطلوبة</label>
+<select id="customer_service" name="service" class="styled-select">
+  <option>مقاولات عامة</option>
+  <option>أعمال الكهرباء</option>
+  <option>سباكة المياه</option>
+  <option>صيانة عامة</option>
+  <option>هندسة وتصميم الديكور</option>
+</select>
 
     <label for="customer_email">البريد الإلكتروني</label>
       <input type="email" id="customer_email" name="email" required />
@@ -180,10 +190,10 @@
 
       <!-- Loader أثناء الإرسال -->
       <div class="loader" id="loader"></div>
-
     </form>
   </div>
 </section>
+
 <!-- Success Popup -->
 <div class="popup" id="successPopup">
   <div class="icon">
@@ -276,7 +286,12 @@
   })();
 
 </script>
-
+ <!-- كود خاص باختيار الخدمات CDN -->
+<script>
+  $(document).ready(function() {
+    $("#customer_service").select2();
+  });
+</script>
   
 </body>
 </html>
