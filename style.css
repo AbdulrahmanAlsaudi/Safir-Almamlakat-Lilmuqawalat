@@ -287,11 +287,28 @@ padding-bottom: 10px;
   padding: 18px;
   border-radius: 12px;
   box-shadow: 0 6px 14px 5px rgba(0,0,0,0.06);
+  border: 2px solid transparent;
+  
+  transition: 0.3s ease;
+  cursor: pointer;
+  
+}
+/* عند تمرير الماوس */
+.feature:hover {
+  border-color: #1e4b7a;
+  box-shadow: 0 6px 18px rgba(30, 75, 122, 0.25);
+  transform: translateY(-3px);
+}
+
+/* عند اللمس على الهاتف */
+.feature:active {
+  border-color: #1e4b7a;
+  box-shadow: 0 6px 18px rgba(30, 75, 122, 0.25);
+  transform: scale(0.97);
 }
 .feature img { width: 40px; margin-left: 8px; }
 .feature h3 { font-size: 18px; color: #1e4b7a; margin: 8px 0; }
 .feature p { font-weight: 600; color: #333; }
-
 
 /* ===========================
               FORM
