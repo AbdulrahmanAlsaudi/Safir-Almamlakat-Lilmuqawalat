@@ -611,7 +611,20 @@ width:28px;
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .hero h1 { font-size: 26px; }
+  .hero {align-items: flex-end;}
+  .hero h1 { font-size: 26px;text-align: center; }
+  .desktop-nav { display: none; } /* اخفاء القائمة العلوية على الشاشات الصغرى */
+  .menu-btn { display: inline-flex; }
+}
+/* Laptop */
+@media (max-width: 1366px) {
+  .hero {height: 35vh; }
+  .hero h1 { font-size: 26px;text-align: center; }
+  .hero-sub { 
+   font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+    }
   .desktop-nav { display: none; } /* اخفاء القائمة العلوية على الشاشات الصغرى */
   .menu-btn { display: inline-flex; }
 }
