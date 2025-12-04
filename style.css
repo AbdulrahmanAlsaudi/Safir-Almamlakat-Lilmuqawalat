@@ -618,7 +618,8 @@ width:28px;
 }
 /* Laptop */
 @media (max-width: 1366px) {
-  .hero {height: 25vh; align-items: center;}
+  .hero {height: 25vh; align-items: flex-end;justify-content: center; display: flex;
+  height: 400px;}
   .hero h1 { font-size: 26px;text-align: center; }
   .hero-sub {  margin-bottom: 10px;
     }
