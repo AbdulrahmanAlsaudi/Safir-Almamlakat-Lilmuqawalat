@@ -620,14 +620,9 @@ width:28px;
 @media (max-width: 1366px) {
   .hero {height: 35vh; }
   .hero h1 { font-size: 26px;text-align: center; }
-  .hero-sub { 
-   font-size: 19px;
-  line-height: 1.7;
-  margin-bottom: 25px;
+  .hero-sub {  margin-bottom: 10px;
     }
-  .desktop-nav { display: none; } /* اخفاء القائمة العلوية على الشاشات الصغرى */
-  .menu-btn { display: inline-flex; }
-}
+  
 
 /* Small tablets / large phones */
 @media (max-width: 720px) {
