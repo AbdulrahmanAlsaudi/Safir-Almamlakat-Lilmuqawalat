@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>شـركة سفــير الخليج للمـقاولات</title>
 
-  <!-- خطوط -->
+                        <!-- خطوط -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
 
   <!-- Select2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-
+  
+ <!-- Style CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -51,27 +51,29 @@
       </div>
 
       <div class="header-actions">
-        <nav class="desktop-nav" aria-label="قائمة التنقّل">
-          <ul>
-            <li><a href="#top">الرئيسية</a></li>
-            <li><a href="#services">الخدمات</a></li>
-            <li><a href="#features">الأعمال</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-          </ul>
-        </nav>
+    <nav class="desktop-nav" aria-label="قائمة التنقّل">
+         <ul>
+           <li><a href="#top">الرئيسية</a></li>
+           <li><a href="#services">الخدمات</a></li>
+           <li><a href="#features">الأعمال</a></li>
+           <li><a href="#contact">تواصل معنا</a></li>
+         </ul>
+       </nav>
 
         <button class="menu-btn" id="openSidebar" aria-label="فتح القائمة">☰</button>
       </div>
     </div>
   </header>
+  <!--==============  نهاية قسم HEADER ===========-->
 
-  <!-- HERO -->
+  <!--========  بداية قسم Hero النص العلوي ========-->
   <section class="hero" id="top" role="region" aria-label="الشعار الرئيسي">
     <div class="hero-inner container">
       <h1>شـركة سفــير الخليج للمـقاولات</h1>
         <p class="hero-sub">خدمات احترافية في المقاولات العامة، الكهرباء، السباكة، والصيانة العامة.</p>
     </div>
   </section>
+<!--==============  نهاية قسم Hero ===========-->
 
   <!-- ABOUT -->
   <section id="about" class="container section about">
@@ -80,12 +82,15 @@
       شـركة سفــير الخليج للمـقاولات تقدم خدمات احترافية في مجالات التصميم الهندسي والمقاولات، تنفيذ أعمال البناء والتشطيبات، الكهرباء، السباكة، أعمال الحدادة والدهان، وعزل الأسطح والمنشأت. نلتزم بأعلى معايير الجودة والدقة في تنفيذ المشاريع من خلال فريق هندسي وفني متخصص.
     </p>
   </section>
-
+  <!--==============  نهاية قسم About ===========-->
+  
+  
+<h2 class="section-title">خـدمـاتـنا</h2>
   <!-- SERVICES -->
   <section id="services" class="section services-section">
     <div class="container">
       <div class="fon">
-        <h2>خـدمـاتـنا</h2>
+       <!-- <h2>خـدمـاتـنا</h2>-->
       </div>
 
       <div class="services-grid" aria-label="خدماتنا">
@@ -112,6 +117,7 @@
       </div>
     </div>
   </section>
+  <!--========  نهاية قسم SERVICE  الخدمات ========-->
 
   <!-- FEATURES / اعرف أكثر -->
   <section id="features" class="features section">
@@ -158,36 +164,37 @@
       </div>
     </div>
   </section>
+  <!--========  نهاية قسم FEATURE  اعرف اكثر ======-->
 
   <!-- ORDER FORM -->
 <section id="order" class="section form-section">
   <div class="container">
     <h2>طلــب مـشروع</h2>
 
-    <form id="orderForm" class="order-form" novalidate>
-    <label for="customer_name">اسم العميل</label>
-    <input type="text" id="customer_name" name="name" required />
+   <form id="orderForm" class="order-form" novalidate>
+        <label for="customer_name">اسم العميل</label>
+        <input type="text" id="customer_name"    name="name" required />
 
-    <label for="customer_phone">رقم الهاتف</label>
-    <input type="tel" id="customer_phone" name="phone" required />
+       <label for="customer_phone">رقم الهاتف</label>
+       <input type="tel" id="customer_phone" name="phone" required />
 
-   <label for="customer_address">عنوان العميل</label>
-   <input type="text" id="customer_address" name="address" required />
+      <label for="customer_address">عنوان العميل</label>
+      <input type="text" id="customer_address" name="address" required />
 
- <label for="customer_service">الخدمة المطلوبة</label>
-<select id="customer_service" name="service" class="styled-select">
-   <option value="">اختر نوع الخدمة</option>
-  <option>مقاولات عامة</option>
-  <option>أعمال الكهرباء</option>
-  <option>سباكة المياه</option>
-  <option>صيانة عامة</option>
-  <option>هندسة وتصميم الديكور</option>
+     <label for="customer_service">الخدمة المطلوبة</label>
+     <select id="customer_service" name="service" class="styled-select">
+     <option value="">اختر نوع الخدمة</option>
+        <option>مقاولات عامة</option>
+        <option>أعمال الكهرباء</option>
+        <option>سباكة المياه</option>
+        <option>صيانة عامة</option>
+    <option>هندسة وتصميم الديكور</option>
 </select>
 
-    <label for="customer_email">البريد الإلكتروني</label>
+      <label for="customer_email">البريد الإلكتروني</label>
       <input type="email" id="customer_email" name="email" required />
       
-  <button type="submit" class="submit-btn">إرسال الطلب</button>
+     <button type="submit" class="submit-btn">إرسال الطلب</button>
 
       <!-- Loader أثناء الإرسال -->
       <div class="loader" id="loader"></div>
@@ -195,7 +202,7 @@
   </div>
 </section>
 
-<!-- Success Popup -->
+<!-- Success Popup رساله نجاح-->
 <div class="popup" id="successPopup">
   <div class="icon">
     <!-- SVG icon -->
@@ -204,10 +211,9 @@
       <path d="M7 12l3 3 7-7"></path>
     </svg>
   </div>
-
   <h3>تم الإرسال بنجاح!</h3>
   <p>شكراً لك، تم استلام طلبك بنجاح وسنتواصل معك قريباً.</p>
-
+                  <!--زر الاغلاق-->
   <button class="close-btn" onclick="closePopup()">إغلاق</button>
 </div>
   
@@ -267,16 +273,19 @@
       </ul>
     </div>
   </section>
-
+  
+<!--FOOTER قسم-->
   <footer class="footer">
     <div class="container">
       <p>© 2025 شـركة سفــير الخليج للمـقاولات</p>
     </div>
   </footer>
+  <!--==============  نهاية قسم FOOTER ===========-->
 
-  
+        <!--==============  ملفات JS ===========-->
   <script src="script.js"></script>
   <script src="index.js"></script>
+  
  <!-- EmailJS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -296,6 +305,6 @@
       });
     });
   </script>
-
+  
 </body>
 </html>
