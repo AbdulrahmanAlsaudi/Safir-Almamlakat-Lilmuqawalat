@@ -153,23 +153,56 @@ font-weight: 700;
    HERO
    =========================== */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1350&q=80');
+  background: url("img/hero-construction.png") center center/cover no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 64px 0;
+  /*padding: 64px 0;*/
   text-align: center;
   color: #fff;
+  
+  position: relative;
+  height: 35vh;        /* حجم مناسب للموبايل */
+  min-height: 350px;   /* يمنع أن تصبح قصيرة */
+  djustify-contentisplay: flex;
+  justify-content: center;  /* محاذاة أفقي */
+  align-items: flex-end;/* محاذاة عمودي للأسفل */
+  padding: 0 25px; 
+  
+  display: flex;
+  
+  height: 300px;           /* يجب تحديد ارتفاع للحاوية */
+}
+   /* تعتيم الصورة */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
 }
 .hero-inner {
- max-width: 900px;
+ 
   margin-inline: auto;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 750px;
    }
+ 
 .hero h1 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+/*.hero h1 {
   font-size: 28px;
   margin: 0 0 8px;
   color: #fff;
   text-shadow: 0 2px 12px rgba(0,0,0,0.45);
-}
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: center;
+}*/
 .hero-sub { margin: 0; color: #f1f6fb; font-weight: 500; }
 
 /* ===========================
@@ -203,7 +236,14 @@ padding-bottom: 10px;
   color: #0d355f;
    margin-bottom: 8px;
     }
-
+/*.section-title {
+  text-align: center;
+  color: #1e4b7a;
+  font-weight: 700;
+  margin: 40px 0 20px;
+  margin-bottom: 10px;
+   font-size: 22px;
+}*/
 .services-grid {
   display: grid;
   gap: 18px;
@@ -284,14 +324,14 @@ padding-bottom: 10px;
 }
 .feature {
   background: #fff;
-  padding: 18px;
+  padding: 12px;
   border-radius: 12px;
   box-shadow: 0 6px 14px 5px rgba(0,0,0,0.06);
   border: 2px solid transparent;
   
   transition: 0.3s ease;
   cursor: pointer;
-  
+   
 }
 /* عند تمرير الماوس */
 .feature:hover {
@@ -306,7 +346,7 @@ padding-bottom: 10px;
   box-shadow: 0 6px 18px rgba(30, 75, 122, 0.25);
   transform: scale(0.97);
 }
-.feature img { width: 40px; margin-left: 8px; }
+.feature img { width: 35px; margin-left: 8px; }
 .feature h3 { font-size: 18px; color: #1e4b7a; margin: 8px 0; }
 .feature p { font-weight: 600; color: #333; }
 
