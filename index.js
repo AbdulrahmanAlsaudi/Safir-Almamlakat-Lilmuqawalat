@@ -36,7 +36,8 @@ if (!name || !phone || !address) {
   loader.style.display = "block"; // show loader
 
   // ==== SEND EMAIL USING EMAILJS ====
-  emailjs.send("service_4dra8xl", "template_ieu4q8s", {
+   // emailjs.send("service_4dra8xl", "template_ieu4q8s",//
+  emailjs.send("service_4q0mpcr", "template_83xiokm", {
       customer_name: name,
       customer_phone: phone,
       customer_address: address,
