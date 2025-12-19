@@ -575,8 +575,12 @@ gap:8px;
 align-items:center;
 
  }
-.contact-list img { 
-width:28px; 
+.contact-list img {
+  width: 28px;
+  transition: all 0.3s ease;
+}
+.contact-list .icon {
+  width: 32px;   /* غير الرقم حسب الحجم المطلوب */ 
 }
 .contact-list span{
     color:#1e4b7a;
