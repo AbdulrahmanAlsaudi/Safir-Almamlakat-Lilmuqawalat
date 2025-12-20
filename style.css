@@ -169,9 +169,8 @@ font-weight: 700;
   justify-content: center;  /* محاذاة أفقي */
   align-items: flex-end;/* محاذاة عمودي للأسفل */
   padding: 0 25px; 
-  
+  margin-top: 62px;
   display: flex;
-  
   height: 300px;           /* يجب تحديد ارتفاع للحاوية */
 }
    /* تعتيم الصورة */
